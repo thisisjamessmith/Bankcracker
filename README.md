@@ -5,6 +5,8 @@ Bankcracker lets you create entries in multiple channels from a single front end
 
 This is currently very basic and has not been extensively tested... Use at your own risk!
 
+It has not yet been tested for editing functionality either... only for submitting new entries.
+
 Usage
 ===========
 
