@@ -30,9 +30,9 @@ Example
 			<input type="text" name="channel_4:cf_custom_field_name">
 
 			<button type="submit" class="btn">Submit</button>
-		{/exp:safecracker}
+	{/exp:safecracker}
 
-Extra Hook
-===========
+Extra Dev Hook: bankcracker_end($safecracker)
+============================================
 
-Bankcracker use the safecracker_submit_entry_end extension hook for every new channel entry it needs to create. Therefore it's important to note that any other extensions that also use this hook will get triggered multiple times - possibly leading to unpredictable consequences. To alleviate this, Bankcracker provides its own bankcracker_end extension hook that can be used for further processing after all entries have been added. Just like the safecracker_submit_entry_end hook, it passes the Safecracker object along with it.
+Bankcracker uses the safecracker_submit_entry_end extension hook for every new channel entry it needs to create. Therefore it's important to note that any other extensions that also use this hook will get triggered multiple times - possibly leading to unpredictable consequences. To alleviate this, Bankcracker provides its own bankcracker_end extension hook that can be used for further processing after all entries have been added. Just like the safecracker_submit_entry_end hook, it passes the Safecracker object along with it.
