@@ -14,22 +14,22 @@ Example
 ===========
 
   	{exp:safecracker channel="your_main_channel" return="anything"}
-			<label for="title">Title <em>*</em></label>
-			<input id="title" name="title" type="text" onkeyup="liveUrlTitle();">
+			<label for="title">Title</label>
+			<input name="title" type="text">
 
-			<label for="url_title">URL <em>*</em></label>
-			<input id="url_title"  name="url_title" type="text" value="">
+			<label for="url_title">URL</label>
+			<input name="url_title" type="text">
 			
 			<!-- extra channel fields -->
 			<input type="text" name="channel_5:title">
 			<input type="text" name="channel_5:url_title">
-			<input type="text" name="channel_5:cf_custom_field_name">
+			<input type="text" name="channel_5:custom_field_name">
 
 			<input type="text" name="channel_4:title">
 			<input type="text" name="channel_4:url_title">
-			<input type="text" name="channel_4:cf_custom_field_name">
+			<input type="text" name="channel_4:custom_field_name">
 
-			<button type="submit" class="btn">Submit</button>
+			<button type="submit">Submit</button>
 	{/exp:safecracker}
 
 Extra Dev Hook: bankcracker_end($safecracker)
