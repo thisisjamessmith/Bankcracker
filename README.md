@@ -10,7 +10,7 @@ It has not yet been tested for editing functionality either... only for submitti
 Usage
 ===========
 
-Within a normal Safecracker form (or third-party forms that inherit the Safecracker object, such as Profile:Edit etc), add fields using the naming convention {channel_n:field_name}, where n is the channel ID and field_name is the name of the field. All the normal Safecracker rules apply, so ensure your member group has permission to publish in all the relevant channels, and be sure to include all the required fields. The channel that is specified in your tag parameters does not need the prefix.
+Within a normal Safecracker form (or third-party forms that inherit the Safecracker object, such as Profile:Edit etc), add fields using the naming convention channel_n:field_name, where n is the channel ID and field_name is the name of the field. All the normal Safecracker rules apply, so ensure your member group has permission to publish in all the relevant channels, and be sure to include all the required fields. The fields of the channel that is specified in your Safecracker tag parameters do not need the 'channel_n:' prefix.
 
 Example
 ===========
