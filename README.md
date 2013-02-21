@@ -44,4 +44,3 @@ Change log
 
 * v.0.6: Fix to ensure Safecracker's <code>dynamic_title</code> parameter only applies to the main entry
 * v.0.5: Initial Release
-=======
