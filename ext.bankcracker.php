@@ -14,7 +14,7 @@ class Bankcracker_ext {
 	public $docs_url		= '';
 	public $name			= 'Bankcracker';
 	public $settings_exist	= 'n';
-	public $version			= '0.5';
+	public $version			= '0.6';
 	private $EE;
 	private $hooks 			= array('safecracker_submit_entry_end');
 
@@ -104,9 +104,16 @@ class Bankcracker_ext {
 
 				$_POST['channel_id'] = $channel_id;
 
+
+
 				foreach ($fields as $field => $value)
 				{					
 					$_POST[$field] = $value;
+
+					if ( isset($_POST['dynamic_title']) )
+					{
+						unset($_POST['dynamic_title']);
+					}
 				}
 				
 				$this->EE->session->cache['bankcracker']['submitted'][$channel_id] = TRUE;
